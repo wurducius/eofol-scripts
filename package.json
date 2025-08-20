@@ -1,0 +1,45 @@
+{
+  "name": "eofol-scripts",
+  "version": "0.0.1",
+  "description": "Scripts for Eofol web framework",
+  "keywords": [
+    "Eofol",
+    "web",
+    "framework"
+  ],
+  "homepage": "https://github.com/wurducius/eofol-scripts#readme",
+  "bugs": {
+    "url": "https://github.com/wurducius/eofol-scripts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wurducius/eofol-scripts.git"
+  },
+  "license": "MIT",
+  "author": "Jakub Eliáš <wurducius@gmail.com>",
+  "bin": {
+    "eofol-scripts": "bin/eofol-scripts.js"
+  },
+  "scripts": {
+    "check": "npx eslint -c eslint.config.mjs .",
+    "check-fix": "npx eslint -c eslint.config.mjs --fix .",
+    "prettify": "npx prettier . --write",
+    "lint": "npm run check-fix && npm run prettify",
+    "depcheck": "npx depcheck"
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "http-server": "14.1.1",
+    "rimraf": "6.0.1",
+    "webpack": "5.101.0",
+    "webpack-bundle-analyzer": "4.10.2",
+    "webpack-dev-server": "5.2.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.32.0",
+    "eslint": "9.32.0",
+    "globals": "16.3.0",
+    "open": "10.2.0",
+    "prettier": "3.6.2"
+  }
+}
